@@ -1,0 +1,14 @@
+{
+  "name": "ayuradhi-ecommerce",
+  "version": "1.0.0",
+  "description": "AyuRadhi E-commerce Platform",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && npm install && cd ../admin && npm install",
+    "build": "cd frontend && npm run build && cd ../admin && npm run build",
+    "start": "cd backend && npm start",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\" \"cd admin && npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
